@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #FF0000;
+  --color-brand-blue: #2563EB;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-serif: "Lora", serif;
+  --font-roboto: "Roboto", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-[#1E293B] font-sans antialiased;
+  }
+}
+
+.card-style {
+  @apply bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-sm;
+}
+
+.section-label {
+  @apply text-[11px] font-bold text-[#64748B] uppercase tracking-wider mb-2 block;
+}
+
+.jetbrains-number {
+  @apply font-mono font-medium;
+}
+
+.btn-primary {
+  @apply bg-brand-red hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-xl transition-all shadow-lg shadow-red-500/20 active:scale-[0.98] disabled:opacity-50;
+}
+
+.input-style {
+  @apply w-full bg-white border border-slate-200 rounded-xl px-5 py-3 outline-none focus:border-brand-red/50 focus:ring-4 focus:ring-brand-red/5 transition-all text-sm font-medium placeholder:text-slate-400;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Youtube Monetization checker",
+  "description": "Professional YouTube Monetization & Revenue Calculator. Estimate AdSense, Sponsors, Memberships, and more with real-time accuracy engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
